@@ -108,13 +108,14 @@ class HomePage extends StatelessWidget {
                       showTitleActions: true,
                       minTime: DateTime(2018, 3, 5),
                       maxTime: DateTime(2019, 6, 7),
-                      theme: DatePickerTheme(
+                      theme: DatePickerThemes(
                           headerColor: Colors.orange,
                           backgroundColor: Colors.blue,
                           itemStyle: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18),
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
                           doneStyle:
                               TextStyle(color: Colors.white, fontSize: 16)),
                       onChanged: (date) {
